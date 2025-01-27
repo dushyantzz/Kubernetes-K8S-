@@ -1,10 +1,9 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kubernetes-test-app
 spec:
-  replicas: 2  
+  replicas: 2  # Number of pods
   selector:
     matchLabels:
       app: kubernetes-test-app
